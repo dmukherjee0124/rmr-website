@@ -1,5 +1,6 @@
 import { MapPin, Mail, Clock, CheckCircle, AlertCircle } from "lucide-react";
 import { useState, FormEvent, useEffect } from "react";
+import { LocationMap } from "../components/LocationMap";
 
 export function Contact() {
   useEffect(() => {
@@ -421,16 +422,21 @@ export function Contact() {
         </div>
       </section>
 
-      {/* Map Section (Placeholder) */}
+      {/* Map Section */}
       <section className="py-20 bg-[#F5F3EF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-white border border-[#C9A961] p-8">
             <h2 className="text-3xl text-gray-900 mb-6 text-center">Find Us</h2>
-            <div className="aspect-video bg-gradient-to-br from-[#3D4539] to-[#2A2D26] flex items-center justify-center">
-              <div className="text-center text-white">
-                <MapPin className="w-16 h-16 mx-auto mb-4 opacity-50" />
-                <p className="text-xl">Map Integration Placeholder</p>
-              </div>
+            <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg" style={{ height: '300px' }}>
+              <LocationMap />
+            </div>
+            <div className="mt-8 text-center">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">RMR Headquarters</h3>
+              <p className="text-gray-600">
+                Unit 402C, 4th Floor Magnum Tower 1<br />
+                Golf Course Extension, Sector 58<br />
+                Gurgaon, Haryana 122011
+              </p>
             </div>
           </div>
         </div>
