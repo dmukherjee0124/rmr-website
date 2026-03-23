@@ -79,15 +79,6 @@ npm run build
 
 The build output will be in the `dist` folder.
 
-## Deployment
-
-This project is configured for Vercel deployment with proper SPA routing.
-
-```bash
-vercel deploy
-```
-
-Set environment variables in Vercel dashboard under Project Settings > Environment Variables.
 
 ## Pages
 
@@ -117,15 +108,6 @@ Set environment variables in Vercel dashboard under Project Settings > Environme
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
-## Images
-
-The project currently uses placeholder images. Replace them with actual images in the component files:
-
-- Logo (Header and Footer)
-- 5 Client logos (Adani, Jindal, Lloyds, Tata Steel, JSW)
-- Mining operations image
-- 3 Team member photos (Aryaman, Sandip, Shahab)
-- 4 Process images (Mine, Rail Transport, Port Stockpiling, Port Loading)
 
 ## Troubleshooting
 
@@ -137,12 +119,6 @@ The project currently uses placeholder images. Replace them with actual images i
 ```bash
 npm run dev -- --port 3000
 ```
-
-### Issue: EmailJS not sending emails
-**Solution:** Check .env.local variables are set correctly and service is configured in EmailJS dashboard
-
-### Issue: Google Maps not displaying
-**Solution:** Verify API key is valid and Maps Embed API is enabled in Google Cloud Console
 
 ## License
 
