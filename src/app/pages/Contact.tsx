@@ -77,7 +77,7 @@ export function Contact() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setSubmitStatus("idle");
     
@@ -98,31 +98,47 @@ export function Contact() {
       message: sanitizeInput(formData.message),
     };
     
-    // Create email body with line breaks
-    const emailBody = `Name: ${sanitizedData.firstName} ${sanitizedData.lastName}\nEmail: ${sanitizedData.email}\nPhone: ${sanitizedData.phone || "Not provided"}\nCompany: ${sanitizedData.company || "Not provided"}\n\nMessage:\n${sanitizedData.message}`;
+    // Prepare Web3Forms data
+    const formPayload = {
+      access_key: import.meta.env.VITE_WEB3FORMS_ACCCESS_KEY,
+      first_name: sanitizedData.firstName,
+      last_name: sanitizedData.lastName,
+      email: sanitizedData.email,
+      phone: sanitizedData.phone || "Not provided",
+      company: sanitizedData.company || "Not provided",
+      subject: sanitizedData.subject,
+      message: sanitizedData.message,
+    };
 
-    // Create mailto link
-    const recipient = "info@rmrgroup.in";
-    const subject = encodeURIComponent(sanitizedData.subject);
-    const body = encodeURIComponent(emailBody);
-    const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`;
-    
-    // Open email client - try multiple methods for better compatibility
     try {
-      // Method 1: Create and click an anchor element
-      const anchor = document.createElement('a');
-      anchor.href = mailtoLink;
-      anchor.style.display = 'none';
-      document.body.appendChild(anchor);
-      anchor.click();
-      document.body.removeChild(anchor);
-      
-      // Show success message after a brief delay
-      setTimeout(() => {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formPayload),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
         setSubmitStatus("success");
-      }, 500);
-      
+        // Reset form
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          company: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus("error");
+      }
     } catch (error) {
+      console.error("Form submission error:", error);
       setSubmitStatus("error");
     }
   };
@@ -332,7 +348,7 @@ export function Contact() {
                 <div className="mt-4 p-4 bg-green-100 border border-green-200 rounded flex items-center">
                   <CheckCircle className="w-5 h-5 mr-3 text-green-600 flex-shrink-0" />
                   <p className="text-green-800">
-                    Your email client has been opened with your message. Please check your email application to send your inquiry to info@rmrgroup.in
+                    Thank you! Your message has been sent successfully. We'll get back to you within 24 hours.
                   </p>
                 </div>
               )}
