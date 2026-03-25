@@ -59,11 +59,9 @@ export function LocationMap() {
           .bindPopup(
             '<div class="font-semibold text-gray-900">' +
             'RMR Headquarters<br/>' +
-            'Unit 402C, 4th Floor<br/>' +
-            'Magnum Tower 1<br/>' +
-            'Golf Course Extension<br/>' +
-            'Sector 58<br/>' +
-            'Gurgaon, Haryana 122011' +
+            'Office No 1511 15th floor<br/>' +
+            'DLF Galleria Phase IV<br/>' +
+            'Gurugram, Haryana Pin Code 122011' +
             '</div>',
             { maxWidth: 300 }
           )

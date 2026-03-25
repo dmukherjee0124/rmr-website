@@ -44,9 +44,9 @@ export function Footer() {
             <div className="mb-6">
               <h4 className="text-lg mb-2 text-white font-bold">Head Office</h4>
               <address className="text-gray-400 text-sm leading-relaxed not-italic">
-                Unit 402C, 4th Floor Magnum Tower 1,<br />
-                Golf Course Extension, Sector 58<br />
-                Gurgaon, Haryana 122011
+                Office No 1511 15th floor<br />
+                DLF Galleria Phase IV<br />
+                Gurugram, Haryana Pin Code 122011
               </address>
             </div>
 

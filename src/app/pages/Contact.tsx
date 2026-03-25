@@ -381,9 +381,9 @@ export function Contact() {
                   <div>
                     <h3 className="text-xl text-gray-900 mb-2">Head Office</h3>
                     <p className="text-gray-600">
-                      Unit 402C, 4th Floor Magnum Tower 1,<br />
-                      Golf Course Extension, Sector 58<br />
-                      Gurgaon, Haryana 122011
+                      Office No 1511 15th floor<br />
+                      DLF Galleria Phase IV<br />
+                      Gurugram, Haryana Pin Code 122011
                     </p>
                   </div>
                 </div>
@@ -449,9 +449,9 @@ export function Contact() {
             <div className="mt-8 text-center">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">RMR Headquarters</h3>
               <p className="text-gray-600">
-                Unit 402C, 4th Floor Magnum Tower 1<br />
-                Golf Course Extension, Sector 58<br />
-                Gurgaon, Haryana 122011
+                Office No 1511 15th floor<br />
+                DLF Galleria Phase IV<br />
+                Gurugram, Haryana Pin Code 122011
               </p>
             </div>
           </div>

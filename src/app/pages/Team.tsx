@@ -14,7 +14,7 @@ export function Team() {
   const teamMembers = [
     {
       name: "Aryaman Rathore",
-      position: "Chief Operations Officer",
+      position: "Chief Executive Officer",
       description: "Leading operational excellence and strategic growth initiatives at RMR with a focus on innovation and sustainable practices.",
       image: aryamanImage,
       linkedin: "https://www.linkedin.com/in/aryaman-rathore-8055072a3/",
@@ -22,14 +22,14 @@ export function Team() {
     {
       name: "Mr. Sandip Kumar Sinha",
       position: "Board Member",
-      description: "A dynamic commerce professional with 6+ years of experience in accounting and operations management. After beginning his career at Kore Voyages LLP, he served as Chief Operating Officer at Trifecta Minerals Zambia, leading 100+ staff. Currently with The Kore Projects & Logistics, he handles coal and iron ore trading. His expertise spans financial oversight, team leadership, and international business operations.",
+      description: "A dynamic commerce professional with 6+ years of experience in accounting and operations management. After beginning his career at Kore Voyages LLP, he served as Chief Operating Officer at Trifecta Minerals Zambia, leading 100+ staff. Currently with RMR on the Advisory Board, he handles coal and iron ore trading. His expertise spans financial oversight, team leadership, and international business operations.",
       image: sandipImage,
       linkedin: "https://www.linkedin.com/in/sandip-kumar-sinha-a0468b373/",
     },
     {
       name: "Mr. Shahab Ahmed Khan",
       position: "Board Member",
-      description: "Graduate in Science with post Graduate Diploma in Mass Communication. With over 20 Years of experience in Information Technology Business, Shahab is an active member of Team The Kore Projects and takes care of Business Development.",
+      description: "Graduate in Science with post Graduate Diploma in Mass Communication. With over 20 Years of experience in Information Technology Business, Shahab is an active member of Team RMR and is parts of the Advisory Board.",
       image: shahabImage,
       linkedin: "",
     },
