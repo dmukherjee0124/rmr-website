@@ -2,8 +2,7 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 import { Linkedin } from "lucide-react";
 import { useEffect } from "react";
-import aryamanImage from "../../assets/team/AryamanRathoreImg.png";
-import sandipImage from "../../assets/team/SandipKumarImg.png";
+import aryamanImage from "../../assets/team/AryamanRathoreImg.jpeg";
 import shahabImage from "../../assets/team/ShahabAhmed.png";
 
 export function Team() {
@@ -20,16 +19,9 @@ export function Team() {
       linkedin: "https://www.linkedin.com/in/aryaman-rathore-8055072a3/",
     },
     {
-      name: "Mr. Sandip Kumar Sinha",
-      position: "Board Member",
-      description: "A dynamic commerce professional with 6+ years of experience in accounting and operations management. After beginning his career at Kore Voyages LLP, he served as Chief Operating Officer at Trifecta Minerals Zambia, leading 100+ staff. Currently with RMR on the Advisory Board, he handles coal and iron ore trading. His expertise spans financial oversight, team leadership, and international business operations.",
-      image: sandipImage,
-      linkedin: "https://www.linkedin.com/in/sandip-kumar-sinha-a0468b373/",
-    },
-    {
       name: "Mr. Shahab Ahmed Khan",
       position: "Board Member",
-      description: "Graduate in Science with post Graduate Diploma in Mass Communication. With over 20 Years of experience in Information Technology Business, Shahab is an active member of Team RMR and is parts of the Advisory Board.",
+      description: "Graduate in Science with post Graduate Diploma in Mass Communication. With over 20 Years of experience in Information Technology Business, Shahab is an active member of Team RMR and is part of the Advisory Board.",
       image: shahabImage,
       linkedin: "",
     },
