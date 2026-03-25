@@ -7,7 +7,6 @@ export function Footer() {
     { name: "Products", path: "/products" },
     { name: "Team", path: "/team" },
     { name: "Process", path: "/process" },
-    { name: "Careers", path: "/careers" },
     { name: "Contact", path: "/contact" },
   ];
 
