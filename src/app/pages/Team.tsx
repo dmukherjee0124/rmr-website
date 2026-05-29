@@ -2,8 +2,7 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 import { Linkedin } from "lucide-react";
 import { useEffect } from "react";
-import aryamanImage from "../../assets/team/AryamanRathoreImg.jpeg";
-import shahabImage from "../../assets/team/ShahabAhmed.png";
+import aryamanImage from "../../assets/team/AryamanRathoreNew.PNG?url";
 
 export function Team() {
   useEffect(() => {
@@ -17,13 +16,6 @@ export function Team() {
       description: "Leading operational excellence and strategic growth initiatives at RMR with a focus on innovation and sustainable practices.",
       image: aryamanImage,
       linkedin: "https://www.linkedin.com/in/aryaman-rathore-8055072a3/",
-    },
-    {
-      name: "Mr. Shahab Ahmed Khan",
-      position: "Board Member",
-      description: "Graduate in Science with post Graduate Diploma in Mass Communication. With over 20 Years of experience in Information Technology Business, Shahab is an active member of Team RMR and is part of the Advisory Board.",
-      image: shahabImage,
-      linkedin: "",
     },
   ];
 
@@ -63,11 +55,11 @@ export function Team() {
                 key={index}
                 className="bg-white border border-[#C9A961] overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <div className="relative h-80 bg-gray-200">
+                <div className="relative h-96 bg-gray-200">
                   <ImageWithFallback
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <div className="p-6">
