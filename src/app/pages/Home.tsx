@@ -2,6 +2,7 @@ import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import { Link } from "react-router";
 import { ArrowRight, Shield, TrendingUp, Globe, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
+import gmrLogo from "../../assets/clients/GMR_Group_(logo).svg";
 import adaniLogo from "../../assets/clients/adaniLogo.svg";
 import jindalLogo from "../../assets/clients/jindalLogo.svg";
 import jswLogo from "../../assets/clients/JSWLogo.svg";
@@ -176,6 +177,7 @@ function ClientCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   
   const clients = [
+    { name: "GMR Group", logo: gmrLogo, color: "#1C3A70" },
     { name: "TATA STEEL", logo: tataSteelLogo, color: "#004B87" },
     { name: "JSW", logo: jswLogo, color: "#E31E24" },
     { name: "Adani", logo: adaniLogo, color: "#0C4DA2" },
